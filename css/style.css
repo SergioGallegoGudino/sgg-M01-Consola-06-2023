@@ -1,0 +1,329 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 7fr 1fr 7fr;
+    width: 133mm;
+    height: 139mm;
+    background: rgb(194,194,194);
+    background: linear-gradient(159deg, rgba(194,194,194,1) 0%, rgba(83,83,83,1) 27%, rgba(64,64,64,1) 60%);
+    border-radius: 15px;
+}
+
+#superior, #inferior{
+    display: grid;
+    grid-template-columns: 3fr 7fr 3fr;
+    grid-template-rows: 1fr;
+}
+
+
+/*--------------------------------------------------------*/
+
+/* Pantalla superior de la consola */
+
+#superior{
+    border: 5px outset black;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#superior-centro{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 12fr 1fr;
+}
+
+#pantalla-superior{
+    border: solid rgb(30, 30, 30);
+    border-width: 15px;
+    border-radius: 5px;
+    background: rgb(255,255,255);
+    background: linear-gradient(159deg, rgba(255,255,255,1) 0%, rgba(127,127,127,1) 34%, rgba(111,111,111,1) 47%);
+}
+
+#superior-izquierda, #superior-derecha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--------------------------------------------------------*/
+
+/* Salida de audio de la consola */
+
+.audio{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}
+
+.audio-salida{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+/*--------------------------------------------------------*/
+
+/* Bisagra de la consola */
+
+#centro{
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 6fr 1fr;
+}
+
+#centro-izquierda{
+    background: rgb(79,79,79);
+    background: linear-gradient(180deg, rgba(79,79,79,1) 17%, rgba(114,114,114,1) 32%, rgba(72,72,72,1) 57%);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-style: solid none;
+    border-right-color: rgb(30, 30, 30);
+}
+
+#centro-centro{
+    background: rgb(79,79,79);
+    background: linear-gradient(180deg, rgba(79,79,79,1) 17%, rgba(114,114,114,1) 32%, rgba(72,72,72,1) 57%);
+    border: solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#centro-derecha{
+    background: rgb(79,79,79);
+    background: linear-gradient(180deg, rgba(79,79,79,1) 17%, rgba(114,114,114,1) 32%, rgba(72,72,72,1) 57%);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-style: solid none;
+    border-left-color: rgb(30, 30, 30);
+}
+
+/*--------------------------------------------------------*/
+
+/* Microfono de la consola*/
+
+#microfono{
+    vertical-align: middle;
+    padding-top: 2px;
+    padding-left: 2px;
+    font-size: 12px;
+    background-color: black;
+    width: 5px;
+    height: 15px;
+    border-radius: 40%;
+    color: rgb(189, 189, 189);
+}
+
+/*--------------------------------------------------------*/
+
+/* Bateria de la consola */
+
+#bateria{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#apagado{
+    margin-top: 2px;
+    background-color: gray;
+}
+
+#apagado, #encendido{
+    width: 5px;
+    height: 25px;
+    border-radius: 3px;
+}
+
+#encendido{
+    margin: 2px 22px 0 5px;
+    background-color: rgb(75, 216, 115);
+}
+
+.border
+
+/*--------------------------------------------------------*/
+
+/* Pantalla inferior de la consola */
+
+#inferior{
+    border: 5px outset black;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#inferior-izquierda{
+    border-bottom-left-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inferior-centro{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 12fr 1fr;
+}
+
+#pantalla-inferior{
+    border: solid rgb(30, 30, 30);
+    border-width: 15px;
+    background: rgb(255,255,255);
+    background: linear-gradient(333deg, rgba(255,255,255,1) 0%, rgba(127,127,127,1) 34%, rgba(111,111,111,1) 47%);
+    border-radius: 5px;
+}
+
+#inferior-derecha{
+    border-bottom-right-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+
+#inferior-derecha-arriba{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Cruceta de control de la consola*/
+
+#cruceta{
+    margin-bottom: 70px;
+    width: 75px;
+    height: 75px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.pad{
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.horizontal{
+    transform: rotate(-90deg);
+}
+
+#arriba, #abajo, #izquierda, #derecha{
+    border: solid rgb(24, 24, 24);
+}
+
+#arriba{
+    border-top-color: rgb(87, 87, 87);
+    border-left-color: rgb(87, 87, 87);
+    border-bottom-color: rgb(39, 39, 39);
+}
+
+#arriba:active{
+    border-top-color: rgb(39, 39, 39);
+    border-left-color: rgb(39, 39, 39);
+    border-right-color: rgb(87, 87, 87);
+}
+
+#abajo{
+    border-bottom-color: rgb(39, 39, 39);
+    border-left-color: rgb(87, 87, 87);
+    border-top-color: rgb(39, 39, 39);
+}
+
+#abajo:active{
+    border-left-color: rgb(39, 39, 39);
+    border-right-color: rgb(39, 39, 39);
+}
+
+#izquierda{
+    border-bottom-color: rgb(87, 87, 87);
+    border-right-color: rgb(87, 87, 87);
+    border-bottom-color: rgb(39, 39, 39);
+}
+
+#izquierda:active{
+    border-bottom-color: rgb(39, 39, 39);
+    border-right-color: rgb(39, 39, 39);
+    border-left-color: rgb(87, 87, 87);
+}
+
+#derecha{
+    border-top-color: rgb(39, 39, 39);
+    border-right-color: rgb(87, 87, 87);
+    border-bottom-color: rgb(39, 39, 39);
+}
+
+#derecha:active{
+    border-top-color: rgb(39, 39, 39);
+    border-right-color: rgb(39, 39, 39);
+    border-left-color: rgb(87, 87, 87);
+}
+
+/*--------------------------------------------------------*/
+
+/* Botones de la consola*/
+
+#botones{
+    margin-bottom: 0px;
+    width: 90px;
+    height: 90px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.boton{
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+}
+
+#opciones{
+    width: 20px;
+    height: 20px;
+    margin-top: 12px;
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 15px;
+    column-gap: 5px;
+    font-size: 9px;
+    color: white;
+}
+
+#opciones div{
+    display: flex;
+    align-items: center;
+}
+
+.opcion{
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: black;
+    font-size: 9px;
+}
+
+
+/*--------------------------------------------------------*/
