@@ -3,6 +3,9 @@ html{
 }
 
 body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,14 +49,30 @@ body{
     border: solid rgb(30, 30, 30);
     border-width: 15px;
     border-radius: 5px;
-    background: rgb(255,255,255);
-    background: linear-gradient(159deg, rgba(255,255,255,1) 0%, rgba(127,127,127,1) 34%, rgba(111,111,111,1) 47%);
+    background-image: url(../img/up.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #superior-izquierda, #superior-derecha{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#superior-izquierda, #inferior-izquierda{
+    background: rgb(32,32,32);
+    background: linear-gradient(90deg, rgba(32,32,32,0.7288165266106443) 0%, rgba(72,72,72,0) 16%);
+}
+
+#superior-centro, #inferior-centro{
+    background: rgb(11,11,11);
+    background: radial-gradient(circle, rgba(11,11,11,0) 0%, rgba(0,0,0,0.375875350140056) 30%, rgba(0,0,0,0) 90%);
+}
+
+#superior-derecha, #inferior-derecha{
+    background: rgb(32,32,32);
+    background: linear-gradient(270deg, rgba(32,32,32,0.7288165266106443) 0%, rgba(72,72,72,0) 16%);
 }
 
 /*--------------------------------------------------------*/
@@ -154,7 +173,6 @@ body{
     background-color: rgb(75, 216, 115);
 }
 
-.border
 
 /*--------------------------------------------------------*/
 
@@ -228,6 +246,10 @@ body{
     border: solid rgb(24, 24, 24);
 }
 
+/*--------------------------------------------------------*/
+
+/* Detalles de la cruceta */
+
 #arriba{
     border-top-color: rgb(87, 87, 87);
     border-left-color: rgb(87, 87, 87);
@@ -280,7 +302,6 @@ body{
 /* Botones de la consola*/
 
 #botones{
-    margin-bottom: 0px;
     width: 90px;
     height: 90px;
     display: grid;
@@ -290,9 +311,6 @@ body{
 
 .boton{
     background-color: rgb(39, 39, 39);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: white;
     border-radius: 50%;
 }
@@ -309,6 +327,7 @@ body{
     column-gap: 5px;
     font-size: 9px;
     color: white;
+    
 }
 
 #opciones div{
@@ -317,11 +336,10 @@ body{
 }
 
 .opcion{
-    vertical-align: middle;
     width: 14px;
     height: 14px;
     border-radius: 50%;
-    background-color: black;
+    background-color: rgb(39, 39, 39);
     font-size: 9px;
 }
 
