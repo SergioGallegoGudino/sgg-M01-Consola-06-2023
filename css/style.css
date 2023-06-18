@@ -47,11 +47,11 @@ body{
 
 #pantalla-superior{
     border: solid rgb(30, 30, 30);
-    border-width: 15px;
-    border-radius: 5px;
-    background-image: url(../img/up.png);
+    background-image: url("../img/up.png");
     background-size: cover;
     background-repeat: no-repeat;
+    border-width: 15px;
+    border-radius: 5px;
 }
 
 #superior-izquierda, #superior-derecha{
@@ -59,6 +59,10 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+/*--------------------------------------------------------*/
+
+/* Sombreado superior */
 
 #superior-izquierda, #inferior-izquierda{
     background: rgb(32,32,32);
@@ -200,8 +204,9 @@ body{
 #pantalla-inferior{
     border: solid rgb(30, 30, 30);
     border-width: 15px;
-    background: rgb(255,255,255);
-    background: linear-gradient(333deg, rgba(255,255,255,1) 0%, rgba(127,127,127,1) 34%, rgba(111,111,111,1) 47%);
+    background-image: url("../img/down.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 5px;
 }
 
@@ -327,7 +332,6 @@ body{
     column-gap: 5px;
     font-size: 9px;
     color: white;
-    
 }
 
 #opciones div{
