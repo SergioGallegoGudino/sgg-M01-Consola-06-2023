@@ -3,8 +3,8 @@ html{
 }
 
 body{
-    width: 100vw;
-    height: 100vh;
+    min-width: 95vw;
+    min-height: 95vh;
     margin: 0;
     display: flex;
     justify-content: center;
